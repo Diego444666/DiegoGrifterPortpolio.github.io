@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F7E7DC;
+    color: #405D72;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #758694;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.name-logo {
+    color: #FFF8F3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F7E7DC;
+    font-weight: normal;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #FFF8F3;
+}
+
+.hero {
+    height: 400px;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #405D72;
+}
+
+.about-me {
+    background-color: #FFF8F3;
+    padding: 50px 0;
+}
+
+body.home-page {
+    background-color: #FFF8F3;
+}
+
+.alamat-unmul {
+    color: #405D72;
+}
+
+.nav-toggle {
+    display: none;
+    background: #405D72;
+    color: #F7E7DC;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.nav-open ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .name-logo {
+        font-size: 1.2em;
+    }
+}
